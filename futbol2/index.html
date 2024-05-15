@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Club de Fútbol</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="http://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/CATALU%D1A/escudos_jpg/escudo-f.c.%20sant%20vicen%E7%202018.jpg" alt="Escudo del club" class="logo">
+        </div>
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <label for="user-type">Selecciona el tipo de usuario:</label>
+            <select id="user-type">
+                <option value="entrenador">Entrenador</option>
+                <option value="usuario">Usuario</option>
+            </select>
+            <br>
+            <button type="submit">Iniciar Sesión</button>
+        
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
