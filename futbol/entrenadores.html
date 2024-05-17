@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Alevín</title>
+    <link rel="stylesheet" href="entrenadores.css">
+</head>
+<body>
+    <h1>Selecciona tu equipo de Alevín</h1>
+    <select id="team-select">
+        <option value="">Selecciona un equipo</option>
+        <option value="alevinA">Alevín A</option>
+        <option value="alevinB">Alevín B</option>
+        <option value="alevinC">Alevín C</option>
+    </select>
+    
+    <button id="enter-team-button">Entrar a tu equipo</button>
+
+    <script>
+        document.getElementById("enter-team-button").addEventListener("click", function() {
+            var selectedTeam = document.getElementById("team-select").value;
+            if (selectedTeam) {
+                window.location.href = selectedTeam + ".html";
+            } else {
+                alert("Por favor, selecciona un equipo.");
+            }
+        });
+    </script>
+</body>
+</html>

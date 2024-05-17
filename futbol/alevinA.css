@@ -1,0 +1,203 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #004d98 25%, #A50044 25%, #A50044 50%, #004d98 50%, #004d98 75%, #A50044 75%, #A50044 100%);
+    background-size: 56.57px 56.57px; /* To create the stripes effect */
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+}
+
+header {
+    background: #004d98;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #A50044;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #333;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.section h2 {
+    font-size: 24px;
+    color: #004d98;
+    border-bottom: 2px solid #004d98;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #f4f4f4;
+}
+
+button {
+    padding: 5px 10px;
+    background: #004d98;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #A50044;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Adjust width to include padding and border */
+}
+
+form button {
+    background: #004d98;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #A50044;
+}
+
+.calendar-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-container .header button {
+    background: #004d98;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calendar-container .header button:hover {
+    background: #A50044;
+}
+
+.calendar-container #calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-container .day-name, .calendar-container .day {
+    padding: 10px;
+    text-align: center;
+}
+
+.calendar-container .day-name {
+    background: #004d98;
+    color: #fff;
+}
+
+.calendar-container .day {
+    background: #f4f4f4;
+    position: relative;
+}
+
+.calendar-container .day.has-event {
+    background: #d3ffd3;
+}
+
+.calendar-container .day .day-number {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendar-container .day .events {
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    left: 0;
+}
+
+.calendar-container .day .events .event {
+    background: #004d98;
+    color: #fff;
+    padding: 2px;
+    margin: 2px 0;
+    border-radius: 3px;
+}
