@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #ad1313ab;
     color: #212529;
     line-height: 1.6;
 }
@@ -27,7 +27,7 @@ header .nav-links {
 }
 
 header .nav-links li a {
-    color: #fff;
+    color: #185bd8;
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
